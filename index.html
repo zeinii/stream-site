@@ -4,24 +4,13 @@
     <title>Stream Preview</title>
     <style>
         body { margin: 0; background: #000; display: flex; justify-content: center; align-items: center; height: 100vh; }
-        iframe { width: 90%; height: 90%; border: 5px solid #333; }
+        iframe { width: 90%; height: 90%; border: 2px solid #555; }
     </style>
 </head>
 <body>
-    <script>
-        var pass = prompt("Enter Access Code:");
-        if (pass !== "1234") { 
-            alert("Access Denied");
-            window.location.href = "https://google.com"; 
-        }
-    </script>
-
-    <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
-        <iframe 
-            src="https://vdo.ninja/?view=ripevw_final&broadcast&autoplay=1&cleanoutput=1" 
-            allow="autoplay; fullscreen" 
-            style="width: 90%; height: 90%; border: 5px solid #333;">
-        </iframe>
-    </div>
+    <iframe 
+        src="https://vdo.ninja/?view=ripevw_final_fix&autoplay=1" 
+        allow="autoplay; camera; microphone; fullscreen">
+    </iframe>
 </body>
 </html>

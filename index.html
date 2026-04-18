@@ -8,6 +8,20 @@
     </style>
 </head>
 <body>
+    <script>
+    // 1. Set your secret password here
+    var secretCode = "cairo2026"; 
+
+    // 2. Ask the user for the code
+    var userEntry = prompt("This is a private stream. Enter Access Code:");
+
+    // 3. Logic check
+    if (userEntry !== secretCode) {
+        alert("Incorrect password. Access denied.");
+        window.location.href = "https://google.com"; // Kick them out
+        throw new Error("Access Denied"); // Stop the iframe from loading
+    }
+</script>
     <iframe 
         src="https://vdo.ninja/?view=ripevw_live&autoplay=1" 
         allow="autoplay; camera; microphone; fullscreen">
